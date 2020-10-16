@@ -77,18 +77,19 @@ const createFiltro2 = (res) =>{
 const createHeroeRow = (res) =>{
     let tabla = document.getElementById("tabla");
     let tablas = document.getElementsByTagName("table");
-    let filas = document.getElementsByTagName("tr");
-   
-    if(filas.length>1){
+    let filas = document.getElementsByName("unica");
 
+    console.log(filas.length)
+    if(tablas.length > 1 &&filas.length==1){
         let columnas = document.getElementsByTagName("td");
         columnas[0].innerText = res[0].Name;
         columnas[1].innerText = res[0].Gender;
         columnas[2].innerText = res[0].Fighting_Skills;
-
-    }else{
+    }
+    else{
 
         let fila = document.createElement("tr");
+        fila.setAttribute("name","unica");
 
     
 
