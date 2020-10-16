@@ -114,7 +114,11 @@ const createHeroeRow = (res) =>{
     
     
 }
-
+/**
+ * ------------------------------------------------------------------------------------------------
+ * FUNCION PARA CREAR LA TABLA CON LOS DATOS DEL HEROE OBTENIDOS CON LA CONSULTA POR ALIGN y GENDER 
+ * ------------------------------------------------------------------------------------------------
+ */
 const createFiltHeroeTable = (res) => {
 
     let tablas = document.getElementsByTagName("table");
@@ -193,7 +197,11 @@ const obtenerId = () =>{
     }
     return idHeroe;
 }
-
+/**
+ * ----------------------------------------------------------
+ * FUNCION PARA OBTENER EL ALIGNMENT DEL HEROE QUE SE VA A CONSULTAR
+ * -----------------------------------------------------------
+ */
 const obtenerAlignment = () =>{
 
     let align = filtro1.value;
@@ -201,7 +209,11 @@ const obtenerAlignment = () =>{
     console.log(align)
     return align;
 }
-
+/**
+ * ----------------------------------------------------------
+ * FUNCION PARA OBTENER EL GENDER DEL HEROE QUE SE VA A CONSULTAR
+ * -----------------------------------------------------------
+ */
 const obtenerGender = () =>{
 
     let inputs = document.getElementsByTagName("input");
@@ -231,6 +243,11 @@ const getData = (idHeroe) =>{
     //.then(res => console.log(res))
     .then(res => createHeroeRow(res))
 }
+/**
+ * ---------------------------------------------------------------------------------
+ * FUNCION QUE NOS DEVUELVE UNA LISTA DE HEROES A PARTIR DE SU ALIGNMENT Y SU GENDER 
+ * --------------------------------------------------------------------------------- 
+ */
 const getDataFilter = (align, gen) =>{
 
     fetch('/marvel/marvel.php/?alignment='+"\""+align+"\""+'&gender='+"\""+gen+"\"")
@@ -249,7 +266,11 @@ boton.addEventListener("click", ()=>{
     getData(obtenerId());
     
 })
-
+/**
+ * ------------------------------------------------------
+ * BOTON PARA LLAMAR A LA PETICION POR ALIGNMENT Y GENDER
+ * ------------------------------------------------------
+ */
 boton1.addEventListener("click", ()=>{
     getDataFilter(obtenerAlignment(),obtenerGender());
 })
