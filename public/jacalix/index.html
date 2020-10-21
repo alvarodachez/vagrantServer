@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacalix</title>
+    <link href="style.css"
+      rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="datos">
+        <div class="formulario">
+            <label>ID: <input id="id" type="text" placeholder="Introduce el id"></label>
+            <label>NAME: <input id="name" type="text" placeholder="Introduce el id"></label>
+            <label>DESCRIPTION: <input id="description" type="text" placeholder="Introduce el id"></label>
+            <label>SUBSCRIPTION: <input id="subscription" type="text" placeholder="Introduce el id"></label>
+            <label>CATEGORY: <input id="category" type="text" placeholder="Introduce el id"></label>
+        </div>
+        <div id="listar"class="listar">
+            <h3>Listado de Productos</h3>
+            <hr>
+            <table id="productos">
+                <thead>
+                    <th>ID</th>
+                    <th>NAME</th>
+                    <th>DESCRIPTION</th>
+                    <th>RENT</th>
+                    <th>CATEGORY</th>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <div class="botones">
+        <button id="postProduct">Post Product</button>
+        <button id="getProduct">Get Products</button>
+        <button id="updateProduct">Update Product</button>
+    </div>
+    
+<script src="script.js"></script>
+</body>
+</html>
