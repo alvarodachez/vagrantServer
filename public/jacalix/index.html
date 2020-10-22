@@ -7,7 +7,9 @@
     <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+
     <div class="datos">
+        <h1>Productos</h1>
         <div class="formulario">
             <label>ID: <input id="id" type="text" placeholder="Introduce el id"></label>
             <label>NAME: <input id="name" type="text" placeholder="Introduce el nombre"></label>
@@ -27,6 +29,11 @@
             </select>
             </label>
         </div>
+        <div class="botones">
+            <button id="postProduct">Post Product</button>
+            <button id="getProduct">Get Products</button>
+            <button id="updateProduct">Update Product</button>
+        </div>
         <div id="listar"class="listar">
             <h3>Listado de Productos</h3>
             <hr>
@@ -45,11 +52,7 @@
         </div>
     </div>
     
-    <div class="botones">
-        <button id="postProduct">Post Product</button>
-        <button id="getProduct">Get Products</button>
-        <button id="updateProduct">Update Product</button>
-    </div>
+  
     
 <script src="script.js"></script>
 </body>

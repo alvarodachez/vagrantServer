@@ -1,13 +1,35 @@
+
 .datos{
-    display: inline-flex;
+    font-family: monospace;
+    display: grid;
+    grid-auto-columns: auto;
+    padding: 5vw;
+    grid-gap: 2vw;
+}
+.datos h1{
+    font-size: 6vw;
+    text-align: center;
 }
 .formulario{
-    
-    width: 200px;
-    height: 200px;
+    display: grid;
+    grid-auto-columns: auto;
 }
-.listar{
-    margin-left: 200px;
-    width: 400px;
-    height: 200px;
+
+.botones{
+    display: grid;
+    grid-auto-columns: auto;
+    padding: 2vw;
+    grid-gap: 1vw;
+    
+}
+
+.botones button{
+    font-family: monospace;
+    
+    font-size: 4vw;
+}
+.datos .formulario label{
+    display: grid;
+    grid-auto-rows: auto;
+    grid-gap: 1vw;
 }
